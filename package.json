@@ -1,0 +1,25 @@
+{
+  "name": "testcafe-boilerplate",
+  "version": "1.0.0",
+  "description": "Boilerplate project to testcafe",
+  "main": "index.js",
+  "scripts": {
+    "test": "testcafe chrome tests/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hex0cter/testcafe-boilerplate.git"
+  },
+  "keywords": [
+    "testcafe"
+  ],
+  "author": "Daniel Han",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hex0cter/testcafe-boilerplate/issues"
+  },
+  "homepage": "https://github.com/hex0cter/testcafe-boilerplate#readme",
+  "devDependencies": {
+    "testcafe": "^0.21.1"
+  }
+}
