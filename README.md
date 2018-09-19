@@ -1,5 +1,5 @@
 # testcafe-boilerplate
-Demo project to testcafe
+Demo project for testcafe
 
 Run
   ```bash
