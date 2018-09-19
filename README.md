@@ -1,10 +1,11 @@
 # testcafe-boilerplate
-Boilerplate project to testcafe
+Demo project to testcafe
 
 Run
   ```bash
-  npm install
-  npm run test
+  yarn install
+  yarn test:local:chrome
+  yarn test:local:remote
   ```
 to execute the test.
 
