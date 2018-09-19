@@ -4,9 +4,10 @@
   "description": "Boilerplate project to testcafe",
   "main": "index.js",
   "scripts": {
-    "test:local:chrome": "testcafe chrome tests/ --screenshots .",
-    "test:local:remote": "testcafe remote tests/ --qr-code --screenshots .",
-    "test:browserstack:iphone": "testcafe 'browserstack:iPhone 7' tests/ --screenshots ."
+    "test:local:chrome": "testcafe chrome tests/ --screenshots screenshots/local-chrome",
+    "test:local:remote": "testcafe remote tests/ --qr-code --screenshots screenshots/remote",
+    "test:browserstack:iphone": "testcafe 'browserstack:iPhone 7' tests/ --screenshots screenshots/browserstack-iphone7",
+    "test:browserstack:chrome": "testcafe 'browserstack:chrome' tests/ --screenshots screenshots/browserstack-chrome"
   },
   "repository": {
     "type": "git",
