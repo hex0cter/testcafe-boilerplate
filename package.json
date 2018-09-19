@@ -4,7 +4,9 @@
   "description": "Boilerplate project to testcafe",
   "main": "index.js",
   "scripts": {
-    "test": "testcafe chrome tests/"
+    "test:local:chrome": "testcafe chrome tests/ --screenshots .",
+    "test:local:remote": "testcafe remote tests/ --qr-code --screenshots .",
+    "test:browserstack:iphone": "testcafe 'browserstack:iPhone 7' tests/ --screenshots ."
   },
   "repository": {
     "type": "git",
@@ -20,6 +22,9 @@
   },
   "homepage": "https://github.com/hex0cter/testcafe-boilerplate#readme",
   "devDependencies": {
-    "testcafe": "^0.21.1"
+    "browserstack": "^1.5.1",
+    "testcafe": "^0.21.1",
+    "testcafe-browser-provider-browserstack": "^1.5.0",
+    "testcafe-reporter-failure-files": "^1.0.0"
   }
 }

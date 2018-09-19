@@ -10,11 +10,13 @@ fixture('Test Duckduckgo search')
 test('search for dogs', async (t) => {
   const searchInputField = Selector('#search_form_input_homepage')
   const searchButton = Selector('#search_button_homepage')
+  const body = Selector('body')
 
   await t
     .expect(duckduckgo.searchInputField.exists).ok()
     .typeText(duckduckgo.searchInputField, 'dog')
     .click(duckduckgo.searchButton)
+    .takeElementScreenshot(body, 'duckduckgo-screenshots.png')
 
   const location = await getWindowLocation();
 
